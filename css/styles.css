@@ -1,0 +1,271 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body setup for sticky footer */
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Main content takes up available space */
+main {
+    flex: 1;
+}
+
+/* Body styles */
+body {
+    background-image: url('../imagenes/the100fondo.webp');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+    min-height: 100vh;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.logo img {
+    width: 150px;
+    height: auto;
+    margin-left: 10px;
+}
+
+.menu-enlaces {
+    list-style: none;
+    display: flex;
+    margin-right: 20px;
+}
+
+.menu-enlaces li {
+    position: relative;
+    margin: 0 15px;
+}
+
+.menu-enlaces a, .menu-enlaces span {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px;
+}
+
+.menu-enlaces a:hover, .menu-enlaces span:hover {
+    color: #cceeff;
+}
+
+/* Dropdown Menu */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    list-style: none;
+    top: 100%;
+    left: 0;
+    z-index: 20;
+    min-width: 200px;
+    text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    display: block;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    white-space: nowrap;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #555;
+}
+
+/* Main section */
+.contenido-principal {
+    padding: 150px 100px;
+}
+
+.texto-e-imagenes {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px; /* Añadir espacio entre texto e imágenes */
+}
+
+.contenido-fondo {
+    width: 60%;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.8);
+}
+
+.contenido-fondo h2 {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.contenido-fondo p {
+    font-size: 22px;
+    margin-bottom: 15px;
+    text-align: justify;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.contenido-imagenes {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.contenido-imagenes img {
+    width: 100%;
+    height: 225px; /* Reducir el tamaño de las imágenes aproximadamente un 10% */
+    object-fit: cover; /* Asegurar que las imágenes mantengan sus proporciones sin distorsionarse */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Footer styles */
+footer {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+    margin-top: 50px;
+}
+
+.pie-contenido {
+    margin-bottom: 20px;
+}
+
+.pie-inferior {
+    font-size: 14px;
+    color: #cceeff;
+}
+
+/* Estilos para la sección de protagonistas */
+.contenido-protagonistas {
+    padding: 100px 50px;
+}
+
+.fila-protagonistas {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.protagonista {
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo negro semi-transparente */
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    width: 48%; /* Ocupar el 48% del ancho para permitir dos en una fila */
+}
+
+.protagonista img {
+    width: 150px; /* Establecer un tamaño uniforme para todas las imágenes */
+    height: 150px; /* Establecer la altura para que todas las imágenes sean cuadradas */
+    object-fit: cover; /* Asegurar que las imágenes mantengan sus proporciones sin distorsionarse */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    margin-right: 20px;
+}
+
+.descripcion-protagonista {
+    flex: 1;
+}
+
+.descripcion-protagonista h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.descripcion-protagonista p {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Galería con fondo negro semi-transparente */
+.contenido-galeria {
+    padding: 100px 50px;
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo negro semi-transparente */
+    border-radius: 10px;
+}
+
+.galeria-imagenes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 imágenes por fila */
+    grid-gap: 20px;
+    justify-items: center; /* Centrar las imágenes en cada celda */
+}
+
+.galeria-imagenes img {
+    width: 100%;
+    max-width: 300px;
+    height: 200px; /* Fijar la altura de las imágenes para que todas tengan el mismo tamaño */
+    object-fit: cover; /* Mantener proporción sin distorsionar las imágenes */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+/* Modal para ampliar imágenes */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-contenido {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.cerrar {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Empty space for removed h2 title */
+.espacio-vacio {
+    height: 60px; /* Mantener el mismo espacio que ocupaba el h2 eliminado */
+}
