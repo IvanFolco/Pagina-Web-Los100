@@ -1,7 +1,12 @@
-// Función para alternar la visibilidad del menú hamburguesa
-const hamburgerButton = document.getElementById('hamburger-button');
-const navMenu = document.getElementById('nav-menu');
+// Definir la función toggleMenu
+function toggleMenu() {
+    // Selecciona el menú móvil
+    var menuMovil = document.querySelector('.menu-movil');
+    
+    // Alternar la clase 'mostrar' para desplegar o esconder el menú
+    menuMovil.classList.toggle('mostrar');
+}
 
-hamburgerButton.addEventListener('click', () => {
-    navMenu.classList.toggle('active');
-});
+// Añadir el evento onclick al botón hamburguesa directamente desde el JavaScript
+var hamburguesa = document.querySelector('.hamburguesa');
+hamburguesa.onclick = toggleMenu;

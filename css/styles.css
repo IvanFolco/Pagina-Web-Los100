@@ -365,21 +365,19 @@ footer {
     display: flex; /* Mostrar el menú cuando se active la clase */
 }
 
-.menu-movil ul {
-    list-style: none;
-    text-align: center;
-}
-
-.menu-movil ul li {
-    padding: 10px; /* Reducir el padding entre los elementos del menú */
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-}
-
+/* Ajustar el color y el tamaño del texto del menú móvil */
 .menu-movil ul li a {
     color: white;
+    font-size: 18px; /* Ajusta el tamaño para que sea visible */
+    text-align: center;
+    display: block;
+    padding: 10px;
     text-decoration: none;
-    font-size: 14px; /* Reducir el tamaño de la fuente */
-    padding: 8px 0;
+}
+
+.menu-movil ul li a:hover {
+    background-color: #333;
+    color: #cceeff;
 }
 
 /* Media query para pantallas móviles */
