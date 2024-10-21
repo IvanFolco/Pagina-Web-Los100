@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Los 100 - Contacto">
+    <title>Los 100 - Contacto</title>
+    <link rel="icon" href="imagenes/favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header with logo and categories -->
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="imagenes/the100logo.png" alt="Los 100 logo"></a>
+        </div>
+        <nav>
+            <ul class="menu-enlaces">
+                <li class="dropdown">
+                    <span>Temporadas</span>
+                    <ul class="dropdown-content">
+                        <li><a href="temporadas/temporada1.html">Temporada 1</a></li>
+                        <li><a href="temporadas/temporada2.html">Temporada 2</a></li>
+                        <li><a href="temporadas/temporada3.html">Temporada 3</a></li>
+                        <li><a href="temporadas/temporada4.html">Temporada 4</a></li>
+                        <li><a href="temporadas/temporada5.html">Temporada 5</a></li>
+                        <li><a href="temporadas/temporada6.html">Temporada 6</a></li>
+                        <li><a href="temporadas/temporada7.html">Temporada 7</a></li>
+                    </ul>
+                </li>
+                <li><a href="protagonistas/protagonistas.html">Protagonistas</a></li>
+                <li><a href="galeria/galeria.html">Galería</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main section for contact form -->
+    <main>
+        <section class="contenido-contacto">
+            <!-- Espacio vacío para consistencia -->
+            <div class="espacio-vacio"></div>
+
+            <!-- Formulario de contacto -->
+            <div class="formulario-contacto">
+                <h2>Contacto</h2>
+                <form action="#" method="post">
+                    <div class="campo-formulario">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="campo-formulario">
+                        <label for="apellido">Apellido</label>
+                        <input type="text" id="apellido" name="apellido" required>
+                    </div>
+                    <div class="campo-formulario">
+                        <label for="email">Correo Electrónico</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="campo-formulario">
+                        <button type="submit">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="pie-contenido">
+            <h3>Los 100 - Serie</h3>
+            <p>Sitio web dedicado a la serie "Los 100". Creado por Iván Folco.</p>
+            <p>Página no oficial</p>
+        </div>
+        <div class="pie-inferior">
+            <p>&copy; 2024 Los 100 | Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

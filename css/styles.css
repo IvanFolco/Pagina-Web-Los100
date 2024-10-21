@@ -6,19 +6,7 @@
     font-family: 'Arial', sans-serif;
 }
 
-/* Body setup for sticky footer */
-html, body {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-/* Main content takes up available space */
-main {
-    flex: 1;
-}
-
-/* Body styles */
+/* General Body styles */
 body {
     background-image: url('../imagenes/the100fondo.webp');
     background-size: cover;
@@ -39,7 +27,7 @@ header {
     width: 100%;
     top: 0;
     left: 0;
-    z-index: 10;
+    z-index: 10; /* Asegura que el header esté siempre visible */
 }
 
 .logo img {
@@ -48,7 +36,8 @@ header {
     margin-left: 10px;
 }
 
-.menu-enlaces {
+/* Menú tradicional (visible en pantallas grandes) */
+nav ul.menu-enlaces {
     list-style: none;
     display: flex;
     margin-right: 20px;
@@ -111,7 +100,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 20px; /* Añadir espacio entre texto e imágenes */
+    gap: 20px;
 }
 
 .contenido-fondo {
@@ -145,8 +134,8 @@ header {
 
 .contenido-imagenes img {
     width: 100%;
-    height: 225px; /* Reducir el tamaño de las imágenes aproximadamente un 10% */
-    object-fit: cover; /* Asegurar que las imágenes mantengan sus proporciones sin distorsionarse */
+    height: 225px;
+    object-fit: cover;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
 }
@@ -181,18 +170,18 @@ footer {
 }
 
 .protagonista {
-    background-color: rgba(0, 0, 0, 0.6); /* Fondo negro semi-transparente */
+    background-color: rgba(0, 0, 0, 0.6);
     padding: 20px;
     border-radius: 10px;
     display: flex;
     align-items: center;
-    width: 48%; /* Ocupar el 48% del ancho para permitir dos en una fila */
+    width: 48%;
 }
 
 .protagonista img {
-    width: 150px; /* Establecer un tamaño uniforme para todas las imágenes */
-    height: 150px; /* Establecer la altura para que todas las imágenes sean cuadradas */
-    object-fit: cover; /* Asegurar que las imágenes mantengan sus proporciones sin distorsionarse */
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
     margin-right: 20px;
@@ -215,22 +204,22 @@ footer {
 /* Galería con fondo negro semi-transparente */
 .contenido-galeria {
     padding: 100px 50px;
-    background-color: rgba(0, 0, 0, 0.6); /* Fondo negro semi-transparente */
+    background-color: rgba(0, 0, 0, 0.6);
     border-radius: 10px;
 }
 
 .galeria-imagenes {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 imágenes por fila */
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 20px;
-    justify-items: center; /* Centrar las imágenes en cada celda */
+    justify-items: center;
 }
 
 .galeria-imagenes img {
     width: 100%;
     max-width: 300px;
-    height: 200px; /* Fijar la altura de las imágenes para que todas tengan el mismo tamaño */
-    object-fit: cover; /* Mantener proporción sin distorsionar las imágenes */
+    height: 200px;
+    object-fit: cover;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
     cursor: pointer;
@@ -267,5 +256,238 @@ footer {
 
 /* Empty space for removed h2 title */
 .espacio-vacio {
-    height: 60px; /* Mantener el mismo espacio que ocupaba el h2 eliminado */
+    height: 60px;
+}
+
+/* Estilos para la página de contacto */
+.contenido-contacto {
+    padding: 100px 50px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
+
+.formulario-contacto {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.formulario-contacto h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 36px;
+    color: #cceeff;
+}
+
+.campo-formulario {
+    margin-bottom: 20px;
+}
+
+.campo-formulario label {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 10px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.campo-formulario input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+.campo-formulario input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.campo-formulario input:focus {
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.campo-formulario button {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: #1a73e8;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.campo-formulario button:hover {
+    background-color: #145db7;
+}
+
+/* Estilos del menú hamburguesa */
+.hamburguesa {
+    display: none; /* Oculto en pantallas grandes */
+    flex-direction: column;
+    cursor: pointer;
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    z-index: 20; /* El menú hamburguesa tiene prioridad visual */
+}
+
+.hamburguesa span {
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+/* Menú móvil (oculto inicialmente) */
+.menu-movil {
+    display: none; /* Oculto inicialmente */
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.9); /* Barra negra */
+    width: 100%;
+    padding: 10px;
+    z-index: 15; /* Asegura que el menú móvil esté por encima del contenido */
+}
+
+/* Mostrar el menú móvil cuando se activa la clase 'mostrar' */
+.menu-movil.mostrar {
+    display: flex; /* Mostrar el menú cuando se active la clase */
+}
+
+.menu-movil ul {
+    list-style: none;
+    text-align: center;
+}
+
+.menu-movil ul li {
+    padding: 10px; /* Reducir el padding entre los elementos del menú */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.menu-movil ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px; /* Reducir el tamaño de la fuente */
+    padding: 8px 0;
+}
+
+/* Media query para pantallas móviles */
+@media (max-width: 768px) {
+
+    /* Mostrar el menú hamburguesa solo en móviles */
+    .hamburguesa {
+        display: flex; /* Mostrar el botón hamburguesa */
+    }
+
+    /* Ocultar el menú tradicional en móviles */
+    nav ul.menu-enlaces {
+        display: none; /* Ocultar el menú tradicional */
+    }
+
+    /* Ajustar el menú móvil comprimido */
+    .menu-movil {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.9); /* Barra negra */
+        width: 100%;
+        padding: 10px;
+        z-index: 15; /* Asegura que el menú se despliegue por encima del contenido */
+    }
+
+    /* Mostrar el menú móvil cuando se activa */
+    .menu-movil.mostrar {
+        display: flex; /* Mostrar el menú cuando se active la clase */
+    }
+
+    .menu-movil ul {
+        list-style: none;
+        text-align: center;
+    }
+
+    .menu-movil ul li {
+        padding: 10px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .menu-movil ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 14px; /* Reducir el tamaño de la fuente */
+        padding: 8px 0;
+    }
+
+    /* Ajustes generales para móviles */
+    .contenido-principal {
+        padding: 80px 20px;
+    }
+
+    .contenido-fondo {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .contenido-fondo h2 {
+        font-size: 36px;
+    }
+
+    .contenido-fondo p {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .contenido-imagenes img {
+        height: 150px;
+    }
+
+    .formulario-contacto {
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .campo-formulario input, .campo-formulario button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .galeria-imagenes {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 15px;
+    }
+
+    .fila-protagonistas {
+        flex-direction: column;
+    }
+
+    .protagonista {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .protagonista img {
+        width: 100px;
+        height: 100px;
+    }
+
+    footer {
+        padding: 20px;
+        font-size: 14px;
+    }
+
+    .pie-inferior {
+        font-size: 12px;
+    }
 }
