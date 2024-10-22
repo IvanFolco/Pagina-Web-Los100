@@ -9,11 +9,33 @@
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-    <!-- Header with logo and categories -->
+
     <header>
         <div class="logo">
             <a href="../index.html"><img src="../imagenes/the100logo.png" alt="Los 100 logo"></a>
         </div>
+
+        <div class="hamburguesa" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav class="menu-movil">
+            <ul>
+                <li><a href="../temporadas/temporada1.html">Temporada 1</a></li>
+                <li><a href="../temporadas/temporada2.html">Temporada 2</a></li>
+                <li><a href="../temporadas/temporada3.html">Temporada 3</a></li>
+                <li><a href="../temporadas/temporada4.html">Temporada 4</a></li>
+                <li><a href="../temporadas/temporada5.html">Temporada 5</a></li>
+                <li><a href="../temporadas/temporada6.html">Temporada 6</a></li>
+                <li><a href="../temporadas/temporada7.html">Temporada 7</a></li>
+                <li><a href="../protagonistas/protagonistas.html">Protagonistas</a></li>
+                <li><a href="../galeria/galeria.html">Galería</a></li>
+                <li><a href="../contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+
         <nav>
             <ul class="menu-enlaces">
                 <li class="dropdown">
@@ -35,15 +57,11 @@
         </nav>
     </header>
 
-    <!-- Main section for protagonists -->
-    <main>
+   <main>
         <section class="contenido-protagonistas">
-            <!-- Mantener el espacio vacío sin mostrar el título -->
             <div class="espacio-vacio"></div>
 
-            <!-- Protagonist Row 1 -->
             <div class="fila-protagonistas">
-                <!-- Protagonist 1: Clarke Griffin -->
                 <div class="protagonista">
                     <img src="clarkeprota.webp" alt="Clarke Griffin">
                     <div class="descripcion-protagonista">
@@ -52,7 +70,6 @@
                     </div>
                 </div>
 
-                <!-- Protagonist 2: Bellamy Blake -->
                 <div class="protagonista">
                     <img src="bellamyprota.webp" alt="Bellamy Blake">
                     <div class="descripcion-protagonista">
@@ -62,9 +79,7 @@
                 </div>
             </div>
 
-            <!-- Protagonist Row 2 -->
             <div class="fila-protagonistas">
-                <!-- Protagonist 3: Octavia Blake -->
                 <div class="protagonista">
                     <img src="octaviaprota.webp" alt="Octavia Blake">
                     <div class="descripcion-protagonista">
@@ -73,7 +88,6 @@
                     </div>
                 </div>
 
-                <!-- Protagonist 4: Jasper Jordan -->
                 <div class="protagonista">
                     <img src="jasperprota.webp" alt="Jasper Jordan">
                     <div class="descripcion-protagonista">
@@ -83,9 +97,8 @@
                 </div>
             </div>
 
-            <!-- Protagonist Row 3 -->
             <div class="fila-protagonistas">
-                <!-- Protagonist 5: Raven Reyes -->
+
                 <div class="protagonista">
                     <img src="ravenprota.webp" alt="Raven Reyes">
                     <div class="descripcion-protagonista">
@@ -94,7 +107,6 @@
                     </div>
                 </div>
 
-                <!-- Protagonist 6: Finn Collins -->
                 <div class="protagonista">
                     <img src="finnprota.webp" alt="Finn Collins">
                     <div class="descripcion-protagonista">
@@ -104,9 +116,8 @@
                 </div>
             </div>
 
-            <!-- Protagonist Row 4 -->
             <div class="fila-protagonistas">
-                <!-- Protagonist 7: Thelonious Jaha -->
+
                 <div class="protagonista">
                     <img src="jahaprota.webp" alt="Thelonious Jaha">
                     <div class="descripcion-protagonista">
@@ -115,7 +126,6 @@
                     </div>
                 </div>
 
-                <!-- Protagonist 8: Wells Jaha -->
                 <div class="protagonista">
                     <img src="wellsprota.webp" alt="Wells Jaha">
                     <div class="descripcion-protagonista">
@@ -131,14 +141,12 @@
         <div class="pie-contenido">
             <h3>Los 100 - Serie</h3>
             <p>Sitio web dedicado a la serie "Los 100". Creado por Iván Folco.</p>
-            <p>Página no oficial</p>
         </div>
         <div class="pie-inferior">
             <p>&copy; 2024 Los 100 | Todos los derechos reservados.</p>
         </div>
     </footer>
 
-    <script src="..main.js"></script>
+    <script src="../main.js"></script>
 </body>
 </html>
-

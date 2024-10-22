@@ -1,4 +1,4 @@
-/* Reset styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +6,6 @@
     font-family: 'Arial', sans-serif;
 }
 
-/* General Body styles */
 body {
     background-image: url('../imagenes/the100fondo.webp');
     background-size: cover;
@@ -14,9 +13,10 @@ body {
     background-attachment: fixed;
     color: #fff;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
-/* Header styles */
 header {
     display: flex;
     justify-content: space-between;
@@ -27,7 +27,7 @@ header {
     width: 100%;
     top: 0;
     left: 0;
-    z-index: 10; /* Asegura que el header esté siempre visible */
+    z-index: 10;
 }
 
 .logo img {
@@ -36,7 +36,6 @@ header {
     margin-left: 10px;
 }
 
-/* Menú tradicional (visible en pantallas grandes) */
 nav ul.menu-enlaces {
     list-style: none;
     display: flex;
@@ -59,7 +58,6 @@ nav ul.menu-enlaces {
     color: #cceeff;
 }
 
-/* Dropdown Menu */
 .dropdown-content {
     display: none;
     position: absolute;
@@ -91,9 +89,9 @@ nav ul.menu-enlaces {
     background-color: #555;
 }
 
-/* Main section */
 .contenido-principal {
     padding: 150px 100px;
+    flex: 1;
 }
 
 .texto-e-imagenes {
@@ -140,7 +138,6 @@ nav ul.menu-enlaces {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
-/* Footer styles */
 footer {
     background-color: rgba(0, 0, 0, 0.6);
     color: #fff;
@@ -158,7 +155,6 @@ footer {
     color: #cceeff;
 }
 
-/* Estilos para la sección de protagonistas */
 .contenido-protagonistas {
     padding: 100px 50px;
 }
@@ -201,7 +197,6 @@ footer {
     color: rgba(255, 255, 255, 0.9);
 }
 
-/* Galería con fondo negro semi-transparente */
 .contenido-galeria {
     padding: 100px 50px;
     background-color: rgba(0, 0, 0, 0.6);
@@ -225,7 +220,6 @@ footer {
     cursor: pointer;
 }
 
-/* Modal para ampliar imágenes */
 .modal {
     display: none;
     position: fixed;
@@ -254,12 +248,10 @@ footer {
     cursor: pointer;
 }
 
-/* Empty space for removed h2 title */
 .espacio-vacio {
     height: 60px;
 }
 
-/* Estilos para la página de contacto */
 .contenido-contacto {
     padding: 100px 50px;
     background-color: rgba(0, 0, 0, 0.6);
@@ -328,15 +320,14 @@ footer {
     background-color: #145db7;
 }
 
-/* Estilos del menú hamburguesa */
 .hamburguesa {
-    display: none; /* Oculto en pantallas grandes */
+    display: none;
     flex-direction: column;
     cursor: pointer;
     position: absolute;
     top: 25px;
     right: 20px;
-    z-index: 20; /* El menú hamburguesa tiene prioridad visual */
+    z-index: 20;
 }
 
 .hamburguesa span {
@@ -347,28 +338,25 @@ footer {
     transition: 0.4s;
 }
 
-/* Menú móvil (oculto inicialmente) */
 .menu-movil {
-    display: none; /* Oculto inicialmente */
+    display: none;
     flex-direction: column;
     position: absolute;
     top: 70px;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.9); /* Barra negra */
+    background-color: rgba(0, 0, 0, 0.9);
     width: 100%;
     padding: 10px;
-    z-index: 15; /* Asegura que el menú móvil esté por encima del contenido */
+    z-index: 15;
 }
 
-/* Mostrar el menú móvil cuando se activa la clase 'mostrar' */
 .menu-movil.mostrar {
-    display: flex; /* Mostrar el menú cuando se active la clase */
+    display: flex;
 }
 
-/* Ajustar el color y el tamaño del texto del menú móvil */
 .menu-movil ul li a {
     color: white;
-    font-size: 18px; /* Ajusta el tamaño para que sea visible */
+    font-size: 18px;
     text-align: center;
     display: block;
     padding: 10px;
@@ -380,57 +368,18 @@ footer {
     color: #cceeff;
 }
 
-/* Media query para pantallas móviles */
 @media (max-width: 768px) {
-
-    /* Mostrar el menú hamburguesa solo en móviles */
     .hamburguesa {
-        display: flex; /* Mostrar el botón hamburguesa */
+        display: flex;
     }
 
-    /* Ocultar el menú tradicional en móviles */
     nav ul.menu-enlaces {
-        display: none; /* Ocultar el menú tradicional */
-    }
-
-    /* Ajustar el menú móvil comprimido */
-    .menu-movil {
         display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 70px;
-        right: 0;
-        background-color: rgba(0, 0, 0, 0.9); /* Barra negra */
-        width: 100%;
-        padding: 10px;
-        z-index: 15; /* Asegura que el menú se despliegue por encima del contenido */
     }
 
-    /* Mostrar el menú móvil cuando se activa */
-    .menu-movil.mostrar {
-        display: flex; /* Mostrar el menú cuando se active la clase */
-    }
-
-    .menu-movil ul {
-        list-style: none;
-        text-align: center;
-    }
-
-    .menu-movil ul li {
-        padding: 10px;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    }
-
-    .menu-movil ul li a {
-        color: white;
-        text-decoration: none;
-        font-size: 14px; /* Reducir el tamaño de la fuente */
-        padding: 8px 0;
-    }
-
-    /* Ajustes generales para móviles */
     .contenido-principal {
-        padding: 80px 20px;
+        padding: 120px 20px;
+        flex: 1;
     }
 
     .contenido-fondo {
@@ -483,6 +432,9 @@ footer {
     footer {
         padding: 20px;
         font-size: 14px;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
     }
 
     .pie-inferior {

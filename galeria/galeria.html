@@ -9,11 +9,33 @@
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-    <!-- Header with logo and categories -->
+
     <header>
         <div class="logo">
             <a href="../index.html"><img src="../imagenes/the100logo.png" alt="Los 100 logo"></a>
         </div>
+
+        <div class="hamburguesa" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav class="menu-movil">
+            <ul>
+                <li><a href="../temporadas/temporada1.html">Temporada 1</a></li>
+                <li><a href="../temporadas/temporada2.html">Temporada 2</a></li>
+                <li><a href="../temporadas/temporada3.html">Temporada 3</a></li>
+                <li><a href="../temporadas/temporada4.html">Temporada 4</a></li>
+                <li><a href="../temporadas/temporada5.html">Temporada 5</a></li>
+                <li><a href="../temporadas/temporada6.html">Temporada 6</a></li>
+                <li><a href="../temporadas/temporada7.html">Temporada 7</a></li>
+                <li><a href="../protagonistas/protagonistas.html">Protagonistas</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="../contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+
         <nav>
             <ul class="menu-enlaces">
                 <li class="dropdown">
@@ -29,41 +51,33 @@
                     </ul>
                 </li>
                 <li><a href="../protagonistas/protagonistas.html">Protagonistas</a></li>
-                <li><a href="../galeria/galeria.html">Galería</a></li>
+                <li><a href="galeria.html">Galería</a></li>
                 <li><a href="../contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Main section for gallery -->
     <main>
-        <section class="contenido-galeria">
-            <!-- Espacio vacío sin mostrar el título -->
-            <div class="espacio-vacio"></div>
-
+        <section class="contenido-principal">
+            <h2>Galería</h2>
             <div class="galeria-imagenes">
-                <img src="foto1.webp" alt="Galería Imagen 1" class="imagen-galeria">
-                <img src="foto2.webp" alt="Galería Imagen 2" class="imagen-galeria">
-                <img src="foto3.webp" alt="Galería Imagen 3" class="imagen-galeria">
-                <img src="foto4.webp" alt="Galería Imagen 4" class="imagen-galeria">
-                <img src="foto5.webp" alt="Galería Imagen 5" class="imagen-galeria">
-                <img src="foto6.webp" alt="Galería Imagen 6" class="imagen-galeria">
-                <img src="foto7.webp" alt="Galería Imagen 7" class="imagen-galeria">
-                <img src="foto8.webp" alt="Galería Imagen 8" class="imagen-galeria">
-                <img src="foto9.webp" alt="Galería Imagen 9" class="imagen-galeria">
-                <img src="foto10.webp" alt="Galería Imagen 10" class="imagen-galeria">
-                <img src="foto11.webp" alt="Galería Imagen 11" class="imagen-galeria">
-                <img src="foto12.webp" alt="Galería Imagen 12" class="imagen-galeria">
-                <img src="foto13.webp" alt="Galería Imagen 13" class="imagen-galeria">
-                <img src="foto14.webp" alt="Galería Imagen 14" class="imagen-galeria">
-                <img src="foto15.webp" alt="Galería Imagen 15" class="imagen-galeria">
-                <img src="foto16.webp" alt="Galería Imagen 16" class="imagen-galeria">
-            </div>
 
-            <!-- Modal para ampliar las imágenes -->
-            <div id="modal" class="modal">
-                <span class="cerrar">&times;</span>
-                <img class="modal-contenido" id="imagen-ampliada">
+                <img src="../galeria/foto1.webp" alt="Galería Imagen 1" class="imagen-galeria">
+                <img src="../galeria/foto2.webp" alt="Galería Imagen 2" class="imagen-galeria">
+                <img src="../galeria/foto3.webp" alt="Galería Imagen 3" class="imagen-galeria">
+                <img src="../galeria/foto4.webp" alt="Galería Imagen 4" class="imagen-galeria">
+                <img src="../galeria/foto5.webp" alt="Galería Imagen 5" class="imagen-galeria">
+                <img src="../galeria/foto6.webp" alt="Galería Imagen 6" class="imagen-galeria">
+                <img src="../galeria/foto7.webp" alt="Galería Imagen 7" class="imagen-galeria">
+                <img src="../galeria/foto8.webp" alt="Galería Imagen 8" class="imagen-galeria">
+                <img src="../galeria/foto9.webp" alt="Galería Imagen 9" class="imagen-galeria">
+                <img src="../galeria/foto10.webp" alt="Galería Imagen 10" class="imagen-galeria">
+                <img src="../galeria/foto11.webp" alt="Galería Imagen 11" class="imagen-galeria">
+                <img src="../galeria/foto12.webp" alt="Galería Imagen 12" class="imagen-galeria">
+                <img src="../galeria/foto13.webp" alt="Galería Imagen 13" class="imagen-galeria">
+                <img src="../galeria/foto14.webp" alt="Galería Imagen 14" class="imagen-galeria">
+                <img src="../galeria/foto15.webp" alt="Galería Imagen 15" class="imagen-galeria">
+                <img src="../galeria/foto16.webp" alt="Galería Imagen 16" class="imagen-galeria">
             </div>
         </section>
     </main>
@@ -72,13 +86,12 @@
         <div class="pie-contenido">
             <h3>Los 100 - Serie</h3>
             <p>Sitio web dedicado a la serie "Los 100". Creado por Iván Folco.</p>
-            <p>Página no oficial</p>
         </div>
         <div class="pie-inferior">
             <p>&copy; 2024 Los 100 | Todos los derechos reservados.</p>
         </div>
     </footer>
 
-    <script src="galeria.js"></script>
+    <script src="../main.js"></script>
 </body>
 </html>

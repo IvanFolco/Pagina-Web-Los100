@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,12 +9,35 @@
     <link rel="icon" href="../imagenes/favicon.png" type="image/png">
     <link rel="stylesheet" href="../css/styles.css">
 </head>
+
 <body>
-    <!-- Header with logo and categories -->
+
     <header>
         <div class="logo">
             <a href="../index.html"><img src="../imagenes/the100logo.png" alt="Los 100 logo"></a>
         </div>
+
+        <div class="hamburguesa" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav class="menu-movil">
+            <ul>
+                <li><a href="temporada1.html">Temporada 1</a></li>
+                <li><a href="temporada2.html">Temporada 2</a></li>
+                <li><a href="temporada3.html">Temporada 3</a></li>
+                <li><a href="temporada4.html">Temporada 4</a></li>
+                <li><a href="temporada5.html">Temporada 5</a></li>
+                <li><a href="temporada6.html">Temporada 6</a></li>
+                <li><a href="temporada7.html">Temporada 7</a></li>
+                <li><a href="../protagonistas/protagonistas.html">Protagonistas</a></li>
+                <li><a href="../galeria/galeria.html">Galería</a></li>
+                <li><a href="../contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+
         <nav>
             <ul class="menu-enlaces">
                 <li class="dropdown">
@@ -35,22 +59,18 @@
         </nav>
     </header>
 
-    <!-- Main section with background image, title, and synopsis -->
     <main>
         <section class="contenido-principal">
             <div class="texto-e-imagenes">
-                <!-- Texto sobre la temporada -->
                 <div class="contenido-fondo">
                     <h2>Temporada 6</h2>
                     <p>
-                        En la sexta temporada de "Los 100", los sobrevivientes llegan a un nuevo planeta esperando comenzar de nuevo. Pronto descubren que este mundo aparentemente idílico esconde secretos oscuros y amenazas letales bajo su superficie prístina.
+                        En la sexta temporada de "Los 100", los sobrevivientes se enfrentan a un nuevo planeta, un nuevo entorno con desafíos desconocidos. Los viejos enemigos deben convertirse en aliados y se forman nuevas amenazas que redefinen la lucha por la supervivencia.
                     </p>
                     <p>
-                        A medida que se desvelan las verdades del planeta y sus habitantes, los desafíos éticos y los dilemas de liderazgo se intensifican, poniendo a prueba la unidad y la moral del grupo.
+                        El destino de la humanidad está en juego nuevamente, mientras los personajes luchan no solo contra fuerzas externas sino también con sus propios demonios internos.
                     </p>
                 </div>
-
-                <!-- Espacio para las imágenes -->
                 <div class="contenido-imagenes">
                     <img src="../imagenes/imagent6-1.webp" alt="Imagen Temporada 6 - 1">
                     <img src="../imagenes/imagent6-2.webp" alt="Imagen Temporada 6 - 2">
@@ -59,12 +79,10 @@
         </section>
     </main>
 
-    <!-- Footer section -->
     <footer>
         <div class="pie-contenido">
             <h3>Los 100 - Serie</h3>
             <p>Sitio web dedicado a la serie "Los 100". Creado por Iván Folco.</p>
-            <p>Página no oficial</p>
         </div>
         <div class="pie-inferior">
             <p>&copy; 2024 Los 100 | Todos los derechos reservados.</p>
@@ -73,4 +91,5 @@
 
     <script src="../main.js"></script>
 </body>
+
 </html>
